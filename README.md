@@ -42,8 +42,6 @@ A pothole event is confirmed using a **dual-confirmation approach**: the system 
 
 Detected potholes are classified by severity (Minor / Moderate / Severe) based on the combined magnitude of the sensor response.
 
-*(Exact numeric thresholds and calibration values depend on your firmware's tuning — add them here once finalized.)*
-
 ---
 
 ## 🛠️ Tech Stack
@@ -113,8 +111,6 @@ Pothole-Guard/
 - MPU6050 → ESP32 I2C (SDA/SCL)
 - NEO-6M GPS → ESP32 UART
 - Power via a regulated supply appropriate for vehicle mounting
-
-*(Add your actual voltage-divider values, pull-up resistors, and power regulation specifics here to match your build.)*
 
 ---
 
