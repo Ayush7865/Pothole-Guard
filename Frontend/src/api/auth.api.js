@@ -1,11 +1,8 @@
 import axios from "axios";
+import { API_BASE_URL } from "../config/environment";
 
-const BASE_URL = "http://localhost:8080/api/auth";
+const BASE_URL = `${API_BASE_URL}/api/auth`;
 
-// withCredentials: true is required on every call — this is what tells the
-// browser to actually send/receive the httpOnly JWT cookie your backend sets
-// on login. Without it, login will appear to succeed but the session won't
-// persist across requests or page reloads.
 const client = axios.create({
   baseURL: BASE_URL,
   withCredentials: true,

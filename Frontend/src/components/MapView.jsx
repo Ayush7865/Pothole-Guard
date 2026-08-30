@@ -7,7 +7,7 @@ if (import.meta.hot) {
   import.meta.hot.decline();
 }
 
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
+import { MAPBOX_TOKEN } from "../config/environment";
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
 const SOURCE_ID = "pothole-events";
